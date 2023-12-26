@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Sunje List</title>
+</head>
+<body>
+    <h1>Sunje List</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Email</th>
+        </tr>
+        <tr th:each="sunje : ${sunjeList}">
+            <td th:text="${sunje.id}"></td>
+            <td th:text="${sunje.email}"></td>
+        </tr>
+    </table>
+</body>
+</html>
